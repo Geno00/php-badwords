@@ -10,11 +10,13 @@
     <?php
 
         $parola = $_POST ['parola'];
-
-        $parola2 = $_POST ['parola']. str_replace(" ", "***", $parola);
+        $testo = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit totam at veritatis id rerum. Magni eos recusandae, ipsum voluptate a facilis unde itaque eius impedit, doloribus modi inventore cumque.';
+        $parola2 = str_replace($parola, "***", $testo);
 
     ?>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<?php echo $parola;?> Quidem veniam repudiandae ipsam modi nam animi, nihil aspernatur obcaecati accusantium nisi incidunt asperiores blanditiis eveniet accusamus minima eos quasi illum minus.</p>
+    <p><?php echo $parola2;?> </p>
 </body>
 </html>
+
+
